@@ -5,6 +5,8 @@ import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 /**
  * @Author: admin
  * @Date: 2019/4/15 14:59
@@ -19,20 +21,22 @@ public class DataCommitController {
 //    @CrossOrigin(origins = "*", maxAge = 3600) //* 可以改成ip地址
     @RequestMapping(value = "/get",method= RequestMethod.GET)
     @ResponseBody
-    public JSON dataCommit(){
+    public JSON dataCommit(@RequestParam Map<String,Object> map){
 
         String sss = "{\"id\":5,\"name\":\"长安汽车\"}";
         JSONObject jsonObject = JSONObject.parseObject(sss);
         System.out.println(jsonObject);
+
         return jsonObject;
     }
     @RequestMapping(value = "/post",method = RequestMethod.POST)
     @ResponseBody
-    public JSON dataCommitPost(String name){
-        String sss = "{\"id\":6,\"name\":\""+name+"\"}";
-        JSONObject jsonObject = JSONObject.parseObject(sss);
-        System.out.println(jsonObject);
-        return jsonObject;
+    public int dataCommitPost(@RequestBody Map<String,Object> map){
+//        String sss = "{\"id\":6,\"name\":\""+name+"\"}";
+//        JSONObject jsonObject = JSONObject.parseObject(sss);
+//        System.out.println(jsonObject);
+        System.out.println(map);
+        return 1;
     }
 
     @RequestMapping(value = "/delId/{id}",method= RequestMethod.GET)

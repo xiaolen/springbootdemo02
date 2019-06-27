@@ -14,7 +14,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 //定时任务
-//@EnableScheduling
+@EnableScheduling
 //@EnableEurekaClient
 public class DataprossApplication {
     public static void main(String[] args) {

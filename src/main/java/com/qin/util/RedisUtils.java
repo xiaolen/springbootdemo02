@@ -3,12 +3,11 @@ package com.qin.util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
- 
+
 /**
  * redis操作工具类.</br>
  * (基于RedisTemplate)
- * @author xcbeyond
- * 2018年7月19日下午2:56:24
+ * @author 小冷
  */
 @Component
 public class RedisUtils {
@@ -67,5 +66,7 @@ public class RedisUtils {
 		}
 		return result;
 	}
+
+
 
 }

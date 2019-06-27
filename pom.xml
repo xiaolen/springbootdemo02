@@ -40,8 +40,8 @@
     <!--</dependency>-->
 
     <!--<dependency>-->
-      <!--<groupId>org.springframework.boot</groupId>-->
-      <!--<artifactId>spring-boot-starter-web</artifactId>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-web</artifactId>-->
     <!--</dependency>-->
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -49,9 +49,9 @@
       <optional>true</optional>
     </dependency>
     <!--<dependency>-->
-      <!--<groupId>org.springframework.boot</groupId>-->
-      <!--<artifactId>spring-boot-starter-test</artifactId>-->
-      <!--<scope>test</scope>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-test</artifactId>-->
+    <!--<scope>test</scope>-->
     <!--</dependency>-->
 
     <dependency>
@@ -106,15 +106,15 @@
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.junit/com.springsource.org.junit -->
     <!--<dependency>-->
-      <!--<groupId>org.junit</groupId>-->
-      <!--<artifactId>com.springsource.org.junit</artifactId>-->
-      <!--<version>4.7.0</version>-->
-      <!--<scope>test</scope>-->
+    <!--<groupId>org.junit</groupId>-->
+    <!--<artifactId>com.springsource.org.junit</artifactId>-->
+    <!--<version>4.7.0</version>-->
+    <!--<scope>test</scope>-->
     <!--</dependency>-->
     <!--<dependency>-->
-      <!--<groupId>junit</groupId>-->
-      <!--<artifactId>junit</artifactId>-->
-      <!--<version>4.12</version>-->
+    <!--<groupId>junit</groupId>-->
+    <!--<artifactId>junit</artifactId>-->
+    <!--<version>4.12</version>-->
     <!--</dependency>-->
     <dependency>
       <groupId>org.apache.shiro</groupId>
@@ -122,16 +122,16 @@
       <version>1.4.0</version>
     </dependency>
 
-      <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpclient</artifactId>
-        <version>4.3.1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpcore</artifactId>
-        <version>4.3.1</version>
-      </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+      <version>4.3.1</version>
+    </dependency>
 
     <!--<dependency>-->
     <!--<groupId>org.springframework.cloud</groupId>-->
@@ -139,11 +139,21 @@
     <!--<version>2.0.0.RELEASE</version>-->
     <!--</dependency>-->
     <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis -->
+    <!--配置redis的包-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-redis</artifactId>
       <version>2.1.4.RELEASE</version>
     </dependency>
+    <!--<dependency>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-cache</artifactId>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.apache.commons</groupId>-->
+    <!--<artifactId>commons-pool2</artifactId>-->
+    <!--</dependency>-->
+
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -159,6 +169,19 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
     </dependency>
+
+    <dependency>
+      <groupId>cn.apiclub.tool</groupId>
+      <artifactId>simplecaptcha</artifactId>
+      <version>1.2.2</version>
+    </dependency>
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>2.9.0</version>
+    </dependency>
+
+
   </dependencies>
 
   <build>

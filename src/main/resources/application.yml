@@ -1,9 +1,11 @@
 server:
-  port: 8081
+  port: 8082
+
 
 spring:
   redis:
     database: 0
+    #连接时间
     timeout: 5000
     # Redis服务器地址
     host: 127.0.0.1
@@ -21,6 +23,10 @@ spring:
     max-idle: 20
     # 连接池中的最小空闲连接
     min-idle: 2
+  security:
+    user:
+      password: Sd123
+      name: admin
 
 
 #management:
@@ -58,6 +64,16 @@ spring:
 #  client:
 #    serviceUrl:
 #      defaultZone: http://*****:*****/eureka
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@192.168.1.90:8761/eureka
+#
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${spring.application.instance_id:${server.port}}
+#    appname: springboot
 #spring:
 #  application:
 #    name: springboot

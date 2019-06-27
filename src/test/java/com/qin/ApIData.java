@@ -2,6 +2,7 @@ package com.qin;
 
 import com.alibaba.fastjson.JSONObject;
 import com.qin.util.GzipUtils;
+import com.qin.util.RequestApiData;
 import org.apache.commons.httpclient.*;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -146,6 +147,27 @@ public class ApIData {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Test
+    public void test05(){
+        String url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf0e81c3bee622d60&redirect_uri=http%3A%2F%2Fnba.bluewebgame.com%2Foauth_response.php&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect";
+        String sendoutGetReq = RequestApiData.sendoutGetReq(url);
+        System.out.println(sendoutGetReq);
+
+        //post请求
+//        String jsonParam = "{\n" +
+//                "\"apiUser\":\"3\",\n" +
+//                "\"apiEnc\":\"36b8ef55f9a74e9284166a0bda87d604\",\n" +
+//                "\"phone\":\"15300587785\",\n" +
+//                "\"idcard\":\"340828198802165312\",\n" +
+//                "\"pwd\":\"121056\",\n" +
+//                "\"orderid\":\"0001\"\n" +
+//                "}";
+//
+//        String path = "http://127.0.0.1:8081/api/task/short";
+
+
     }
 
 }
