@@ -1,11 +1,9 @@
 package com.qin.test;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.qin.util.ExecuteScript;
 import com.qin.util.JavaScriptUtils;
-import com.qin.util.JsonDataAllUtils;
 import com.qin.util.Methods;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

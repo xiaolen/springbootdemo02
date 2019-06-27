@@ -2,11 +2,9 @@ package com.qin.test;
 
 import com.alibaba.fastjson.JSONObject;
 import com.qin.util.Base64;
-import com.qin.util.JsonDataAllUtils;
+import com.qin.util.JsonDataAllUtil;
+import com.qin.util.JsonDataAllUtil;
 import org.junit.Test;
-
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * @Author: 秦渊渊
@@ -47,10 +45,10 @@ public class Demo02 {
                 "\t}]\n" +
                 "}";
         JSONObject jsStr = JSONObject.parseObject(ddd);
-        String searchItems = JsonDataAllUtils.getData(jsStr, "searchItems");
+        String searchItems = JsonDataAllUtil.getData(jsStr, "searchItems");
         String substring = searchItems.substring(1, searchItems.length() - 1);
 
-        String data = JsonDataAllUtils.getData(JsonDataAllUtils.getJsonObject(substring), "data");
+        String data = JsonDataAllUtil.getData(JsonDataAllUtil.getJsonObject(substring), "data");
 
         String substring1 = data.substring(1, data.length() - 1);
         String[] splitdd = substring1.split(",");
@@ -97,10 +95,10 @@ public class Demo02 {
                 "\t}]\n" +
                 "}";
         JSONObject jsStr = JSONObject.parseObject(ddd);
-        String searchItems = JsonDataAllUtils.getData(jsStr, "searchItems");
+        String searchItems = JsonDataAllUtil.getData(jsStr, "searchItems");
         String substring = searchItems.substring(1, searchItems.length() - 1);
 
-        String data = JsonDataAllUtils.getData(JsonDataAllUtils.getJsonObject(substring), "data");
+        String data = JsonDataAllUtil.getData(JsonDataAllUtil.getJsonObject(substring), "data");
 
         String substring1 = data.substring(1, data.length() - 1);
         String[] splitdd = substring1.split(",");
@@ -167,10 +165,10 @@ public class Demo02 {
                 "\t}]\n" +
                 "}";
         JSONObject jsStr = JSONObject.parseObject(ddd);
-        String searchItems = JsonDataAllUtils.getData(jsStr, "searchItems");
+        String searchItems = JsonDataAllUtil.getData(jsStr, "searchItems");
         String substring = searchItems.substring(1, searchItems.length() - 1);
 
-        String data = JsonDataAllUtils.getData(JsonDataAllUtils.getJsonObject(substring), "data");
+        String data = JsonDataAllUtil.getData(JsonDataAllUtil.getJsonObject(substring), "data");
 
         String substring1 = data.substring(1, data.length() - 1);
         String[] splitdd = substring1.split(",");
@@ -217,10 +215,10 @@ public class Demo02 {
                 "\t}]\n" +
                 "}";
         JSONObject jsStr = JSONObject.parseObject(ddd);
-        String searchItems = JsonDataAllUtils.getData(jsStr, "searchItems");
+        String searchItems = JsonDataAllUtil.getData(jsStr, "searchItems");
         String substring = searchItems.substring(1, searchItems.length() - 1);
 
-        String data = JsonDataAllUtils.getData(JsonDataAllUtils.getJsonObject(substring), "data");
+        String data = JsonDataAllUtil.getData(JsonDataAllUtil.getJsonObject(substring), "data");
 
         String substring1 = data.substring(1, data.length() - 1);
         String[] splitdd = substring1.split(",");
