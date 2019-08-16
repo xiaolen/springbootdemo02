@@ -49,7 +49,7 @@ public class PicverifyactionController {
             Map<String, String> randcode = randomValidateCode.getRandcode(request, response);
             String randomcodekey = randcode.get("RANDOMCODEKEY");
 //            将验证码放入redis并且缓存时间为60秒
-            redisTemplate.opsForValue().set("RANDOMCODEKEY", randomcodekey, 30L, TimeUnit.SECONDS);
+            redisTemplate.opsForValue().set("RANDOMCODEKEY", randomcodekey, 10L, TimeUnit.SECONDS);
 //            return String.valueOf(Math.random());
         } catch (Exception e) {
             logger.error("获取验证码失败>>>>   ", e);

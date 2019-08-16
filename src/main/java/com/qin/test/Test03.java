@@ -17,6 +17,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -451,6 +452,37 @@ public class Test03 {
                 System.out.println(dd.get(i));
             }
         }
+    }
+
+    @Test
+    public void previous02() throws ParseException {
+
+        SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = new Date();
+        String tp = sd.format(date);
+//        date = sd.parse(tp);
+
+//        System.out.println(new Date());
+        System.out.println(date.getClass());
+    }
+
+    @Test
+    public void previous03() throws ParseException {
+
+        SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = new Date();
+        String tp = sd.format(date);
+//        date = sd.parse(tp);
+
+//        System.out.println(new Date());
+        System.out.println(date.getClass());
+    }
+
+    @Test
+    public void test09() {
+        String str = "sdfvasdvggadfvbsdfbd";
+        String encryptPwd = JavaScriptUtils.invoker("static/amm.js", "decode64",str);
+        System.out.println(encryptPwd);
     }
 
 }
